@@ -1,0 +1,11 @@
+<div>
+    <h1>MiQuotes</h1>
+    <ul>
+        <li *ngFor= 'let quote of quotes'>
+            {{quote.name}}
+            <button (click)='seeMore(i)'>See More</button>
+            <app-miquotes-detail *ngIf='quote.showAuthor'[quote]='quote'></app-miquotes-detail>
+        </li>
+    </ul>
+   
+</div>
