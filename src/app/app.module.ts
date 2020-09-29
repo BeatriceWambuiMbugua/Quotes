@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MiquotesComponent } from './miquotes/miquotes.component';
 import { MiquotesDetailComponent } from './miquotes-detail/miquotes-detail.component';
 import { MiquotesFormComponent } from './miquotes-form/miquotes-form.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MiquotesComponent,
     MiquotesDetailComponent,
-    MiquotesFormComponent
+    MiquotesFormComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
