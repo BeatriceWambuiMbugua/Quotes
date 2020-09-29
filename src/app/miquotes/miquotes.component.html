@@ -1,11 +1,25 @@
+<div class="container">
+    <h1>
+        {{title | uppercase}}
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
 
-    <h1>MiQuotes</h1>
-    <div *ngFor= 'let quote of quotes; let i = index'>
-        <ul>
-            <li appStrikethrough>{{quote.name}} Posted on {{quote.datePosted|date|uppercase}}</li>   
-            <button (click)='seeMore(i)'>See More</button>
-            <app-miquotes-detail *ngIf='quote.showAuthor'[quote]='quote'(isRead)='quoteRead($event, i)'></app-miquotes-detail>
-        </ul>
-       
+            
+            <div class="col-sm-9">
+                <div *ngFor='let quote of quotes; let i = index'>
+                    <ul>
+                        <li appStrikethrough>{{quote.name}} Posted on {{quote.datePosted|date|uppercase}}</li>
+                        <button (click)='seeMore(i)'>See More</button>
+                        <app-miquotes-detail *ngIf='quote.showAuthor' [quote]='quote' (isRead)='quoteRead($event, i)'>
+                        </app-miquotes-detail>
+                    </ul>
+                </div>
+
+            </div>
+            
+
+        </div>
     </div>
-    
+</div>

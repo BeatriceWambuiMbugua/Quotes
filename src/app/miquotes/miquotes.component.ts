@@ -11,7 +11,7 @@ import {Miquotes} from '../miquotes';
 
 export class MiquotesComponent implements OnInit {
 
-  title = 'Welcome to the Room of Inspiration, Laughter, and Motivation'
+  title = 'Welcome to MiQuotes'
 
   quotes:Miquotes[] = [
     new Miquotes(1, 'Things change. And friends leave. Life does not stop for anybody', 'Leo Tolstoy', new Date (2020, 9, 29)),
