@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Miquotes } from '../miquotes';
 
 @Component({
   selector: 'app-miquotes-form',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiquotesFormComponent implements OnInit {
 
+  newMiquotes = new Miquotes (0,"","", new Date ());
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
