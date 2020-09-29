@@ -1,11 +1,11 @@
-<div>
+
     <h1>MiQuotes</h1>
-    <ul>
-        <li *ngFor= 'let quote of quotes; let i = index'>
-            {{quote.name}}
+    <div *ngFor= 'let quote of quotes; let i = index'>
+        <ul>
+            <li appStrikethrough>{{quote.name}}</li>   
             <button (click)='seeMore(i)'>See More</button>
             <app-miquotes-detail *ngIf='quote.showAuthor'[quote]='quote'(isRead)='quoteRead($event, i)'></app-miquotes-detail>
-        </li>
-    </ul>
-   
-</div>
+        </ul>
+       
+    </div>
+    
