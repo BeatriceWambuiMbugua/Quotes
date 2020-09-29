@@ -19,9 +19,23 @@ export class MiquotesComponent implements OnInit {
     new Miquotes(3, 'Education is the most powerful weapon which you can use to change the world.', 'Albert Einstein')
 
   ];
+
+  seeMore(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
+
+  quoteRead(isRead, index){
+    if (isRead){
+      let toRead= confirm('Are you certain you are done reading this MiQuote?')
+      if(toRead){
+        this.quotes.splice(index,1);
+      }
+    }
+  }
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

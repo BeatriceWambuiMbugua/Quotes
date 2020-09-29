@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Miquotes } from '../miquotes';
+
+
 
 @Component({
   selector: 'app-miquotes-detail',
@@ -8,10 +10,15 @@ import { Miquotes } from '../miquotes';
 })
 export class MiquotesDetailComponent implements OnInit {
 
-  @Input()quote: Miquotes;
+  @Input() quote: Miquotes;
+
+  @Output()isRead = new EventEmitter<boolean>();
+  quoteRead(read:boolean){
+    this.isRead.emit(read);
+  }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
