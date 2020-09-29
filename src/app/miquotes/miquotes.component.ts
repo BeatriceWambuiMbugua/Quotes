@@ -14,9 +14,9 @@ export class MiquotesComponent implements OnInit {
   title = 'Welcome to the Room of Inspiration, Laughter, and Motivation'
 
   quotes:Miquotes[] = [
-    new Miquotes(1, 'Things change. And friends leave. Life does not stop for anybody', 'Leo Tolstoy'),
-    new Miquotes(2, 'Everyone thinks of changing the world, but no one thinks of changing himself.',  'Nelson Mandela'),
-    new Miquotes(3, 'Education is the most powerful weapon which you can use to change the world.', 'Albert Einstein')
+    new Miquotes(1, 'Things change. And friends leave. Life does not stop for anybody', 'Leo Tolstoy', new Date (2020, 9, 29)),
+    new Miquotes(2, 'Everyone thinks of changing the world, but no one thinks of changing himself.',  'Nelson Mandela', new Date (2020, 9, 28)),
+    new Miquotes(3, 'Education is the most powerful weapon which you can use to change the world.', 'Albert Einstein', new Date (2020, 9, 29))
 
   ];
 
