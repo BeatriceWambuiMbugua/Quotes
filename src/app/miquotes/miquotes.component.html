@@ -16,6 +16,7 @@
                                 <app-miquotes-detail id="read"
                                 *ngIf='quote.showAuthor' [quotes]='quote' (isRead)='quoteRead($event, i)'>
                                 </app-miquotes-detail>
+                                <app-upward></app-upward>
                             </div>
                         </div>
                     </div>
@@ -23,6 +24,7 @@
             </div>
             <div class="col-sm-3">
                 <app-miquotes-form (add)="addedNewMiquotes($event)"></app-miquotes-form>
+                
             </div>
         </div>
     </div>

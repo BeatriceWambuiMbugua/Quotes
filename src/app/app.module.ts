@@ -9,6 +9,7 @@ import { MiquotesDetailComponent } from './miquotes-detail/miquotes-detail.compo
 import { MiquotesFormComponent } from './miquotes-form/miquotes-form.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { UpwardComponent } from './upward/upward.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DateCountPipe } from './date-count.pipe';
     MiquotesDetailComponent,
     MiquotesFormComponent,
     StrikethroughDirective,
-    DateCountPipe
+    DateCountPipe,
+    UpwardComponent
   ],
   imports: [
     BrowserModule,
