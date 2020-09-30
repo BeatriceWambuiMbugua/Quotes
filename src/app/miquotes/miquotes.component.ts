@@ -20,17 +20,6 @@ export class MiquotesComponent implements OnInit {
 
   ];
 
-  get myQuotes(){
-    return this.quotes.sort((a,b)=>{
-      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
-    })
-  }
-  
-
-  seeMore(index){
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
-  }
-
   quoteRead(isRead, index){
     if (isRead){
       let toRead= confirm('Are you certain you are done reading this MiQuote?')
@@ -38,6 +27,17 @@ export class MiquotesComponent implements OnInit {
         this.quotes.splice(index,1);
       }
     }
+  }
+
+  get miQuotes(){
+    return this.quotes.sort((a,b) => {
+      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
+    });
+  }
+  
+
+  seeMore(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
 
   addedNewMiquotes(quote){

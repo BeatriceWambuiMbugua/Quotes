@@ -11,15 +11,12 @@ export class UpwardComponent implements OnInit {
   numberOfLikes: number = 0;
 
   upvoteButtonClick(){
-    this.numberOfLikes++;
+    this.numberOfLikes+=1;
   }
 
   downvoteButtonClick(){
-    this.numberOfLikes--;
+    this.numberOfLikes-=1;
   }
-
-
-
   constructor() { }
 
   ngOnInit() {
