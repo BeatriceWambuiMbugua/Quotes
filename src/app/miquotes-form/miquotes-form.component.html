@@ -2,7 +2,7 @@
     <h2 class="text-center">Add Quote</h2>
     <hr>
 
-    <form (ngSubmit)='addQuote()' #quotesForm='ngForm'>
+    <form (ngSubmit)='addQuote(); quotesForm.resetForm({})' #quotesForm='ngForm'>
 
         <div class="form-group">
             <label for="name">Name</label>
