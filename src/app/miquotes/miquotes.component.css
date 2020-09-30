@@ -13,3 +13,10 @@ h1{
     padding: 1%;
     padding-bottom: 5%;
 }
+.card{
+    width: 24em;
+    margin-bottom: 2%;
+    background-color: #004ba8;
+    box-shadow: 2px 2px 3px 2px #4a525a;
+
+}
