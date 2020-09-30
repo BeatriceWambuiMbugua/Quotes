@@ -20,7 +20,7 @@ Beatrice Wambui Mbugua
 
 # Livelink 
 
-https://beatricewambuimbugua.github.io/Quotes/MiQuotes/
+https://beatricewambuimbugua.github.io/Quotes/
 
 ## Development server
 
