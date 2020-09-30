@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <h2 class="text-center">Add Quote</h2>
+    <hr>
+
+    <form (ngSubmit)='addQuote(); quotesForm.resetForm({})' #quotesForm='ngForm'>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your Name" required class="form-control" id="name"
+                [(ngModel)]="newMiquotes.name" name="yourName" #name="ngModel" required>
+            <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">
+                <div *ngIf="name.errors.required">
+                    Your name is required.
+                </div>
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="name">Quote Tittle</label>
+                <input type="text" required class="form-control" id="title" [(ngModel)]="newMiquotes.title" name="title"
+                    #title="ngModel">
+                <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+                    <div *ngIf="title.errors.required">
+                        Title is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="quote">Quote</label>
+                <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newMiquotes.quote" name="quote"
+                    #quote="ngModel" required></textarea>
+                <div *ngIf="quote.invalid && quote.dirty" class="alert alert-danger">
+                    <div *ngIf="quote.errors.required">
+                        Quote can not be empty.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Quote Author</label>
+                <input type="text" required class="form-control" [(ngModel)]="newMiquotes.author" name="author"
+                    placeholder="Author's Name" id="author"  #author="ngModel">
+                <div *ngIf="author.invalid && author.dirty" class="alert alert-danger">
+                    <div *ngIf="author.errors.required">
+                        Author Name is required.
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-sm btn-primary"> Add Quote
+            </button>
+    </form>
+</div>

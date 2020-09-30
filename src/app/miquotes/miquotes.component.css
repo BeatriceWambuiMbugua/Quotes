@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+}
+.overlay{
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-style: italic;
+    border-radius: 5px;
+    margin: 4%;
+    padding: 1%;
+    padding-bottom: 5%;
+    background-color: #07070a;
+}
+.card{
+    width: 24em;
+    margin-bottom: 2%;
+    background-color: #004ba8;
+    box-shadow: 2px 2px 3px 2px #4a525a;
+
+}
+#read{
+    float: right;
+    margin-top: 20px;
+}
+#more{
+    float: right;
+}
+.card-deck{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
