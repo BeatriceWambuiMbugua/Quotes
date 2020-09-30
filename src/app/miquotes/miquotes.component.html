@@ -13,10 +13,11 @@
                             <p class="card-text" id="text">{{quote.quote}}</p>
                             <div >
                                 <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+                                <app-upward></app-upward>
                                 <app-miquotes-detail id="read"
                                 *ngIf='quote.showAuthor' [quotes]='quote' (isRead)='quoteRead($event, i)'>
                                 </app-miquotes-detail>
-                                <app-upward></app-upward>
+                              
                             </div>
                         </div>
                     </div>
@@ -24,7 +25,6 @@
             </div>
             <div class="col-sm-3">
                 <app-miquotes-form (add)="addedNewMiquotes($event)"></app-miquotes-form>
-                
             </div>
         </div>
     </div>
