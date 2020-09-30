@@ -18,6 +18,10 @@ Beatrice Wambui Mbugua
 3. They can delete a quote
 4. They can see the number of upvotes and number of downvotes for each quote.
 
+# Figma Link
+
+https://www.figma.com/file/Hw4zXY8F7EruXAso1NWH0m/Miquotes?node-id=0%3A1
+
 # Livelink 
 
 https://beatricewambuimbugua.github.io/Quotes/
