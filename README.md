@@ -1,6 +1,15 @@
 # MiQuotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+It is a website that displays quotes, alows users to add their own quotes and upvote or downvote to existing quotes.
+
+# Author
+
+Beatrice Wambui Mbugua
+
+# Screenshot
+
+![image](https://user-images.githubusercontent.com/68596845/94703783-e5544a80-0347-11eb-8170-6b98197e649c.png)
 
 ## Development server
 
