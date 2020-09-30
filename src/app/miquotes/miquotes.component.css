@@ -1,17 +1,16 @@
-*{
-    background-color: #07070a;
-}
+
 h1{
     text-align: center;
 }
 .container{
     color: white;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-style: italic;
     border-radius: 5px;
     margin: 4%;
     padding: 1%;
     padding-bottom: 5%;
+    background-color: #07070a;
 }
 .card{
     width: 24em;

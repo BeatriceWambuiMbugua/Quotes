@@ -1,0 +1,9 @@
+.container-fluid{
+    background-color: #24272B;
+    border-radius: 4px;
+    padding-bottom: 5%;
+    box-shadow: 3px 3px 3px 3px #3E78B2;
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 5%;
+    font-size: 24px;
+  }
