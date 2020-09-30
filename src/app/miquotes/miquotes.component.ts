@@ -14,9 +14,9 @@ export class MiquotesComponent implements OnInit {
   title = 'MiQuotes'
 
   quotes:Miquotes[] = [
-    new Miquotes(1, 'Things change. And friends leave. Life does not stop for anybody', 'Leo Tolstoy', new Date (2020, 9, 29)),
-    new Miquotes(2, 'Everyone thinks of changing the world, but no one thinks of changing himself.',  'Nelson Mandela', new Date (2020, 9, 28)),
-    new Miquotes(3, 'Education is the most powerful weapon which you can use to change the world.', 'Albert Einstein', new Date (2020, 9, 29))
+    new Miquotes(1, 'Wambui', 'Change', 'Things change. And friends leave. Life does not stop for anybody', 'Leo Tolstoy', new Date (2020, 9, 29), 0, 0),
+    new Miquotes(2, 'Beatrice', 'inner-change', 'Everyone thinks of changing the world, but no one thinks of changing himself.',  'Nelson Mandela', new Date (2020, 9, 28), 0,0),
+    new Miquotes(3, 'Mbugua', 'Education', 'Education is the most powerful weapon which you can use to change the world.', 'Albert Einstein', new Date (2020, 9, 29), 0,0)
 
   ];
 
@@ -40,7 +40,7 @@ export class MiquotesComponent implements OnInit {
     }
   }
 
-  addedMiquotes(quote){
+  addedNewMiquotes(quote){
     let arraysize = this.quotes.length;
     quote.id = arraysize+1;
     quote.datePosted = new Date(quote.datePosted)

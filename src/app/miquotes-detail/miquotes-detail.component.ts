@@ -13,6 +13,7 @@ export class MiquotesDetailComponent implements OnInit {
   @Input() quote: Miquotes;
 
   @Output()isRead = new EventEmitter<boolean>();
+  
   quoteRead(read:boolean){
     this.isRead.emit(read);
   }

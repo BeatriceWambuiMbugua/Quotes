@@ -7,3 +7,8 @@
     margin-bottom: 5%;
     font-size: 24px;
   }
+  hr{
+      width: 70%;
+      height: 4px;
+      background-color: #004BA8;
+  }
