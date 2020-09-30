@@ -4,26 +4,27 @@
     </h1>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3"> <app-miquotes-form></app-miquotes-form></div>
             <div class="col-sm-9">
-                <div *ngFor='let quote of quotes; let i = index'>
+                <div class="all-cards">
+                    <div *ngFor='let quote of myQuotes; let i = index'>
+                        <div class="card-body">
+                            <h4 id={{i}} class="card-title" appStrikethrough>{{quote.name}} Posted on
+                                {{quote.datePosted|date|uppercase}}
+                            </h4>
+                            <button (click)='seeMore(i)' class="btn btn-primary">See More</button>
 
-                    <h4 id={{i}} appStrikethrough>{{quote.name}} Posted on {{quote.datePosted|date|uppercase}}</h4>
-                    <button (click)='seeMore(i)' class="btn btn-primary">See More</button>
+                            <div *ngIf='quote.showAuthor'>
+                                <app-miquotes-detail [quote]='quote' (isRead)='quoteRead($event, i)'>
+                                </app-miquotes-detail>
 
-                    <div *ngIf='quote.showAuthor'>
-                        <app-miquotes-detail [quote]='quote' (isRead)='quoteRead($event, i)'>
-                        </app-miquotes-detail>
-
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-
-
             </div>
-
-
+            <div class="col-sm-3">
+                <app-miquotes-form (add)="addedMiquotes($event)"></app-miquotes-form>
+            </div>
         </div>
     </div>
 </div>
